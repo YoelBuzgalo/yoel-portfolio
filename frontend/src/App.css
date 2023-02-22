@@ -1,0 +1,37 @@
+:root {
+  --synthwave-flat-purple: #3c345c;
+  --synthwave-dark-purple: #5c2c6d;
+  --synthwave-pink: #d30cb8;
+  --synthwave-flat-green: #5da4a6;
+  --synthwave-neon-green: #6df1d8;
+  --synthwave-neon-blue: #4444dd;
+  font-family: 'Cascadia Code', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--synthwave-flat-purple);
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 50px;
+  width: 100%;
+  z-index: 10;
+}
+
+main {
+  height: 100%;
+  z-index: 5;
+  margin-top: 50px;
+}

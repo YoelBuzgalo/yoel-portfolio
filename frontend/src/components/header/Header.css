@@ -1,0 +1,44 @@
+.header {
+  background-color: var(--synthwave-dark-purple);
+  height: 100%;
+  width: 100%;
+}
+
+.wrap {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.logo {
+  margin-top: 5px;
+  margin-left: 5px;
+  max-height: 100%;
+  width: auto;
+  filter: invert(0) sepia(48%) saturate(431%) hue-rotate(104deg) brightness(99%)
+    contrast(91%);
+}
+
+.gradient-seperator {
+  height: 5px;
+  background: linear-gradient(
+    to right,
+    var(--synthwave-flat-purple),
+    var(--synthwave-pink)
+  );
+  animation: gradient 5s ease-in infinite;
+  background-size: 200% 200%;
+  opacity: 1;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
