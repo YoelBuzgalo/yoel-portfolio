@@ -1,22 +1,21 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/header/Header';
 import HomePage from './pages/home/HomePage';
+import Button from './components/footer-button/Button';
 import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="container">
-        <header>
-          <Header />
-        </header>
-        <main>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-          </Routes>
-        </main>
-      </div>
-    </BrowserRouter>
+    <body>
+      <header>
+        <Header />
+      </header>
+      <main>
+        <HomePage />
+      </main>
+      <footer>
+        <Button />
+      </footer>
+    </body>
   );
 }
 

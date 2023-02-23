@@ -3,7 +3,7 @@ import './HomePage.css';
 
 function HomePage() {
   return (
-    <div>
+    <div className="home">
       <div className="home-container">
         <h1 className="intro intro-title">Yoel B. Buzgalo</h1>
         <p className="intro intro-text">
@@ -18,7 +18,6 @@ function HomePage() {
         <p className="intro intro-text">
           Are you ready to dive in and learn all about me?
         </p>
-        <button className="intro-button">V</button>
       </div>
     </div>
   );
